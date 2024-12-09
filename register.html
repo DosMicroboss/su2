@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистриация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            background-image: url(main_pic/bg.jpeg);
+        }
+        .container {
+            width: 380px;
+            padding: 20px;
+            background-color: #4885ff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="tel"],
+        .container input[type="password"],
+        .container input[type="file"],
+        .container input[typr="radio"]
+        {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: rgb(239, 239, 239);
+        }
+        .container input[type="radio"] {
+            margin-right: 5px;
+            
+        }
+        .container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .container a {
+            color: #ff5252;
+            text-decoration: none;
+        }
+        .container .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff3c00;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .container .submit-btn:hover {
+            background-color: #0056ac;
+            color: #15c402;
+            transition: 0.5s;
+        }
+
+        .container .submit-btn:focus {
+            color: #15c402;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+        .container input[type="number"]{
+            background-color: rgb(239, 239, 239);
+            margin-bottom: 15px;
+            width: 15%;
+        
+        }
+        img {
+        vertical-align: middle;
+        width: 35px;
+        height: 35px;
+        padding-left: 11px;
+        margin-left: 10px;
+    }
+    .head {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .head-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="head"><div class="head-content"><h2>Қолданушыны тіркеу</h2> <a href="main.html"><img src="main_pic/domoi.png"></a></div></div>
+        <form action="https://satbayev.university/kk">
+            <label>Атыңыз:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Досымжан" required>
+
+            <label>Тегіңіз:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Даулетбек" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email" placeholder="doskz0306@gmail.com" required>
+
+            <label>Телефон номеріңіз:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 *** *** ** **" required>
+
+            <label>Құпиясөз:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label>Құпиясөзді қайта жазыңыз:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label>Жыңысыңыз:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label>Ер</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label>Әйел</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label>Басқа</label>
+
+            
+            <label>Жасыңыз:</label>
+            <input type="number" id="age" min="1" max="100" required>
+            
+
+            <label>Фото қойыңыз:</label>
+            <input type="file" id="file" name="file" required>
+
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label>Мен <a href="#">қолдану шартымен</a> келісемін</label>
+ 
+            <button type="submit" class="submit-btn">Тіркелу</button>
+        </form>
+    </div>
+</body>
+</html>
